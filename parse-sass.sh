@@ -41,4 +41,7 @@ for color in "${_ECOLOR_VARIANTS[@]}"; do
     done
 done
 
+node-sass --style compressed --sourcemap=none src/gtk-3.0/gtk-dark-arch.scss src/gtk-3.0/gtk-dark-arch.css &
+echo "==> Generating the gtk-dark-arch.css..."
+
 wait
